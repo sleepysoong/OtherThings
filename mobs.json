@@ -1,5 +1,4 @@
 {
-  "format_version": "1.10.0",
   "geometry.humanoid": {
     "texturewidth": 64,
     "textureheight": 64,
@@ -316,5 +315,6 @@
         ]
       }
     ]
-  }
+  },
+  "format_version": "1.10.0"
 }
