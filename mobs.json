@@ -1,320 +1,1562 @@
-{
-  "geometry.humanoid": {
-    "texturewidth": 64,
-    "textureheight": 64,
-    "visible_bounds_width": 2,
-    "visible_bounds_height": 3,
-    "visible_bounds_offset": [
-      0,
-      1.5,
-      0
-    ],
-    "bones": [
-      {
-        "name": "body",
-        "pivot": [
-          0,
-          24,
-          0
-        ],
-        "cubes": [
-          {
-            "origin": [
-              -4,
-              12,
-              -2
-            ],
-            "size": [
-              8,
-              12,
-              4
-            ],
-            "uv": [
-              16,
-              16
-            ]
+array(2) {
+  ["format_version"]=>
+  string(6) "1.12.0"
+  ["minecraft:geometry"]=>
+  array(3) {
+    [0]=>
+    array(2) {
+      ["bones"]=>
+      array(3) {
+        [0]=>
+        array(3) {
+          ["name"]=>
+          string(4) "body"
+          ["parent"]=>
+          string(5) "waist"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(0)
           }
-        ]
-      },
-      {
-        "name": "bodyArmor",
-        "parent": "body",
-        "pivot": [
-          0,
-          24,
-          0
-        ]
-      },
-      {
-        "name": "belt",
-        "parent": "body",
-        "pivot": [
-          0,
-          24,
-          0
-        ]
-      },
-      {
-        "name": "waist",
-        "pivot": [
-          0,
-          12,
-          0
-        ]
-      },
-      {
-        "name": "head",
-        "pivot": [
-          0,
-          24,
-          0
-        ],
-        "cubes": [
-          {
-            "origin": [
-              -4,
-              24,
-              -4
-            ],
-            "size": [
-              8,
-              8,
-              8
-            ],
-            "uv": [
-              0,
-              0
-            ]
+        }
+        [1]=>
+        array(2) {
+          ["name"]=>
+          string(5) "waist"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(12)
+            [2]=>
+            int(0)
           }
-        ]
-      },
-      {
-        "name": "hat",
-        "pivot": [
-          0,
-          24,
-          0
-        ],
-        "cubes": [
-          {
-            "origin": [
-              -4,
-              24,
-              -4
-            ],
-            "size": [
-              8,
-              8,
-              8
-            ],
-            "uv": [
-              32,
-              0
-            ],
-            "inflate": 0.5
+        }
+        [2]=>
+        array(5) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-5)
+                [1]=>
+                int(8)
+                [2]=>
+                int(3)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(10)
+                [1]=>
+                int(16)
+                [2]=>
+                int(1)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(0)
+                [1]=>
+                int(0)
+              }
+            }
           }
-        ]
-      },
-      {
-        "name": "rightArm",
-        "pivot": [
-          -5,
-          22,
-          0
-        ],
-        "cubes": [
-          {
-            "origin": [
-              -8,
-              12,
-              -2
-            ],
-            "size": [
-              4,
-              12,
-              4
-            ],
-            "uv": [
-              40,
-              16
-            ]
+          ["name"]=>
+          string(4) "cape"
+          ["parent"]=>
+          string(4) "body"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(3)
           }
-        ]
-      },
-      {
-        "name": "rightItem",
-        "parent": "rightArm",
-        "pivot": [
-          -6,
-          15,
-          1
-        ]
-      },
-      {
-        "name": "rightArmArmor",
-        "parent": "rightArm",
-        "pivot": [
-          -5,
-          22,
-          0
-        ]
-      },
-      {
-        "name": "leftArm",
-        "pivot": [
-          5,
-          22,
-          0
-        ],
-        "mirror": true,
-        "cubes": [
-          {
-            "origin": [
-              4,
-              12,
-              -2
-            ],
-            "size": [
-              4,
-              12,
-              4
-            ],
-            "uv": [
-              40,
-              16
-            ]
+          ["rotation"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(180)
+            [2]=>
+            int(0)
           }
-        ]
-      },
-      {
-        "name": "leftArmArmor",
-        "parent": "leftArm",
-        "pivot": [
-          5,
-          22,
-          0
-        ],
-        "mirror": true
-      },
-      {
-        "name": "rightLeg",
-        "pivot": [
-          -1.9,
-          12,
-          0
-        ],
-        "cubes": [
-          {
-            "origin": [
-              -3.9,
-              0,
-              -2
-            ],
-            "size": [
-              4,
-              12,
-              4
-            ],
-            "uv": [
-              0,
-              16
-            ]
-          }
-        ]
-      },
-      {
-        "name": "rightLegging",
-        "parent": "rightLeg",
-        "pivot": [
-          -1.9,
-          12,
-          0
-        ]
-      },
-      {
-        "name": "rightBoot",
-        "parent": "rightLeg",
-        "pivot": [
-          -1.9,
-          12,
-          0
-        ]
-      },
-      {
-        "name": "rightSock",
-        "parent": "rightLeg",
-        "pivot": [
-          -1.9,
-          12,
-          0
-        ]
-      },
-      {
-        "name": "leftLeg",
-        "pivot": [
-          1.9,
-          12,
-          0
-        ],
-        "mirror": true,
-        "cubes": [
-          {
-            "origin": [
-              -0.1,
-              0,
-              -2
-            ],
-            "size": [
-              4,
-              12,
-              4
-            ],
-            "uv": [
-              0,
-              16
-            ]
-          }
-        ]
-      },
-      {
-        "name": "leftLegging",
-        "parent": "leftLeg",
-        "pivot": [
-          1.9,
-          12,
-          0
-        ],
-        "mirror": true
-      },
-      {
-        "name": "leftBoot",
-        "parent": "leftLeg",
-        "pivot": [
-          1.9,
-          12,
-          0
-        ],
-        "mirror": true
-      },
-      {
-        "name": "leftSock",
-        "parent": "leftLeg",
-        "pivot": [
-          1.9,
-          12,
-          0
-        ],
-        "mirror": true
-      },
-      {
-        "name": "helmet",
-        "pivot": [
-          0,
-          24,
-          0
-        ]
+        }
       }
-    ]
-  },
-  "format_version": "1.10.0"
+      ["description"]=>
+      array(3) {
+        ["identifier"]=>
+        string(13) "geometry.cape"
+        ["texture_height"]=>
+        int(32)
+        ["texture_width"]=>
+        int(64)
+      }
+    }
+    [1]=>
+    array(2) {
+      ["bones"]=>
+      array(17) {
+        [0]=>
+        array(2) {
+          ["name"]=>
+          string(4) "root"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(0)
+            [2]=>
+            int(0)
+          }
+        }
+        [1]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(8)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(16)
+                [1]=>
+                int(16)
+              }
+            }
+          }
+          ["name"]=>
+          string(4) "body"
+          ["parent"]=>
+          string(5) "waist"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(0)
+          }
+        }
+        [2]=>
+        array(3) {
+          ["name"]=>
+          string(5) "waist"
+          ["parent"]=>
+          string(4) "root"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(12)
+            [2]=>
+            int(0)
+          }
+        }
+        [3]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-4)
+                [1]=>
+                int(24)
+                [2]=>
+                int(-4)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(8)
+                [1]=>
+                int(8)
+                [2]=>
+                int(8)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(0)
+                [1]=>
+                int(0)
+              }
+            }
+          }
+          ["name"]=>
+          string(4) "head"
+          ["parent"]=>
+          string(4) "body"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(0)
+          }
+        }
+        [4]=>
+        array(3) {
+          ["name"]=>
+          string(4) "cape"
+          ["parent"]=>
+          string(4) "body"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(3)
+          }
+        }
+        [5]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.5)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-4)
+                [1]=>
+                int(24)
+                [2]=>
+                int(-4)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(8)
+                [1]=>
+                int(8)
+                [2]=>
+                int(8)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(32)
+                [1]=>
+                int(0)
+              }
+            }
+          }
+          ["name"]=>
+          string(3) "hat"
+          ["parent"]=>
+          string(4) "head"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(0)
+          }
+        }
+        [6]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(32)
+                [1]=>
+                int(48)
+              }
+            }
+          }
+          ["name"]=>
+          string(7) "leftArm"
+          ["parent"]=>
+          string(4) "body"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(5)
+            [1]=>
+            int(22)
+            [2]=>
+            int(0)
+          }
+        }
+        [7]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.25)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(48)
+                [1]=>
+                int(48)
+              }
+            }
+          }
+          ["name"]=>
+          string(10) "leftSleeve"
+          ["parent"]=>
+          string(7) "leftArm"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(5)
+            [1]=>
+            int(22)
+            [2]=>
+            int(0)
+          }
+        }
+        [8]=>
+        array(3) {
+          ["name"]=>
+          string(8) "leftItem"
+          ["parent"]=>
+          string(7) "leftArm"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(6)
+            [1]=>
+            int(15)
+            [2]=>
+            int(1)
+          }
+        }
+        [9]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-8)
+                [1]=>
+                int(12)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(40)
+                [1]=>
+                int(16)
+              }
+            }
+          }
+          ["name"]=>
+          string(8) "rightArm"
+          ["parent"]=>
+          string(4) "body"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(-5)
+            [1]=>
+            int(22)
+            [2]=>
+            int(0)
+          }
+        }
+        [10]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.25)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-8)
+                [1]=>
+                int(12)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(40)
+                [1]=>
+                int(32)
+              }
+            }
+          }
+          ["name"]=>
+          string(11) "rightSleeve"
+          ["parent"]=>
+          string(8) "rightArm"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(-5)
+            [1]=>
+            int(22)
+            [2]=>
+            int(0)
+          }
+        }
+        [11]=>
+        array(4) {
+          ["locators"]=>
+          array(1) {
+            ["lead_hold"]=>
+            array(3) {
+              [0]=>
+              int(-6)
+              [1]=>
+              int(15)
+              [2]=>
+              int(1)
+            }
+          }
+          ["name"]=>
+          string(9) "rightItem"
+          ["parent"]=>
+          string(8) "rightArm"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(-6)
+            [1]=>
+            int(15)
+            [2]=>
+            int(1)
+          }
+        }
+        [12]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                float(-0.1)
+                [1]=>
+                int(0)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(16)
+                [1]=>
+                int(48)
+              }
+            }
+          }
+          ["name"]=>
+          string(7) "leftLeg"
+          ["parent"]=>
+          string(4) "root"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            float(1.9)
+            [1]=>
+            int(12)
+            [2]=>
+            int(0)
+          }
+        }
+        [13]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.25)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                float(-0.1)
+                [1]=>
+                int(0)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(0)
+                [1]=>
+                int(48)
+              }
+            }
+          }
+          ["name"]=>
+          string(9) "leftPants"
+          ["parent"]=>
+          string(7) "leftLeg"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            float(1.9)
+            [1]=>
+            int(12)
+            [2]=>
+            int(0)
+          }
+        }
+        [14]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                float(-3.9)
+                [1]=>
+                int(0)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(0)
+                [1]=>
+                int(16)
+              }
+            }
+          }
+          ["name"]=>
+          string(8) "rightLeg"
+          ["parent"]=>
+          string(4) "root"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            float(-1.9)
+            [1]=>
+            int(12)
+            [2]=>
+            int(0)
+          }
+        }
+        [15]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.25)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                float(-3.9)
+                [1]=>
+                int(0)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(0)
+                [1]=>
+                int(32)
+              }
+            }
+          }
+          ["name"]=>
+          string(10) "rightPants"
+          ["parent"]=>
+          string(8) "rightLeg"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            float(-1.9)
+            [1]=>
+            int(12)
+            [2]=>
+            int(0)
+          }
+        }
+        [16]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.25)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(8)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(16)
+                [1]=>
+                int(32)
+              }
+            }
+          }
+          ["name"]=>
+          string(6) "jacket"
+          ["parent"]=>
+          string(4) "body"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(0)
+          }
+        }
+      }
+      ["description"]=>
+      array(6) {
+        ["identifier"]=>
+        string(24) "geometry.humanoid.custom"
+        ["texture_height"]=>
+        int(64)
+        ["texture_width"]=>
+        int(64)
+        ["visible_bounds_height"]=>
+        int(2)
+        ["visible_bounds_offset"]=>
+        array(3) {
+          [0]=>
+          int(0)
+          [1]=>
+          int(1)
+          [2]=>
+          int(0)
+        }
+        ["visible_bounds_width"]=>
+        int(1)
+      }
+    }
+    [2]=>
+    array(2) {
+      ["bones"]=>
+      array(17) {
+        [0]=>
+        array(2) {
+          ["name"]=>
+          string(4) "root"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(0)
+            [2]=>
+            int(0)
+          }
+        }
+        [1]=>
+        array(3) {
+          ["name"]=>
+          string(5) "waist"
+          ["parent"]=>
+          string(4) "root"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(12)
+            [2]=>
+            int(0)
+          }
+        }
+        [2]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(8)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(16)
+                [1]=>
+                int(16)
+              }
+            }
+          }
+          ["name"]=>
+          string(4) "body"
+          ["parent"]=>
+          string(5) "waist"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(0)
+          }
+        }
+        [3]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-4)
+                [1]=>
+                int(24)
+                [2]=>
+                int(-4)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(8)
+                [1]=>
+                int(8)
+                [2]=>
+                int(8)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(0)
+                [1]=>
+                int(0)
+              }
+            }
+          }
+          ["name"]=>
+          string(4) "head"
+          ["parent"]=>
+          string(4) "body"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(0)
+          }
+        }
+        [4]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.5)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-4)
+                [1]=>
+                int(24)
+                [2]=>
+                int(-4)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(8)
+                [1]=>
+                int(8)
+                [2]=>
+                int(8)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(32)
+                [1]=>
+                int(0)
+              }
+            }
+          }
+          ["name"]=>
+          string(3) "hat"
+          ["parent"]=>
+          string(4) "head"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(0)
+          }
+        }
+        [5]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                float(-3.9)
+                [1]=>
+                int(0)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(0)
+                [1]=>
+                int(16)
+              }
+            }
+          }
+          ["name"]=>
+          string(8) "rightLeg"
+          ["parent"]=>
+          string(4) "root"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            float(-1.9)
+            [1]=>
+            int(12)
+            [2]=>
+            int(0)
+          }
+        }
+        [6]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.25)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                float(-3.9)
+                [1]=>
+                int(0)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(0)
+                [1]=>
+                int(32)
+              }
+            }
+          }
+          ["name"]=>
+          string(10) "rightPants"
+          ["parent"]=>
+          string(8) "rightLeg"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            float(-1.9)
+            [1]=>
+            int(12)
+            [2]=>
+            int(0)
+          }
+        }
+        [7]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                float(-0.1)
+                [1]=>
+                int(0)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(16)
+                [1]=>
+                int(48)
+              }
+            }
+          }
+          ["name"]=>
+          string(7) "leftLeg"
+          ["parent"]=>
+          string(4) "root"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            float(1.9)
+            [1]=>
+            int(12)
+            [2]=>
+            int(0)
+          }
+        }
+        [8]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.25)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                float(-0.1)
+                [1]=>
+                int(0)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(0)
+                [1]=>
+                int(48)
+              }
+            }
+          }
+          ["name"]=>
+          string(9) "leftPants"
+          ["parent"]=>
+          string(7) "leftLeg"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            float(1.9)
+            [1]=>
+            int(12)
+            [2]=>
+            int(0)
+          }
+        }
+        [9]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                float(11.5)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(3)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(32)
+                [1]=>
+                int(48)
+              }
+            }
+          }
+          ["name"]=>
+          string(7) "leftArm"
+          ["parent"]=>
+          string(4) "body"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(5)
+            [1]=>
+            float(21.5)
+            [2]=>
+            int(0)
+          }
+        }
+        [10]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.25)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(4)
+                [1]=>
+                float(11.5)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(3)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(48)
+                [1]=>
+                int(48)
+              }
+            }
+          }
+          ["name"]=>
+          string(10) "leftSleeve"
+          ["parent"]=>
+          string(7) "leftArm"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(5)
+            [1]=>
+            float(21.5)
+            [2]=>
+            int(0)
+          }
+        }
+        [11]=>
+        array(3) {
+          ["name"]=>
+          string(8) "leftItem"
+          ["parent"]=>
+          string(7) "leftArm"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(6)
+            [1]=>
+            float(14.5)
+            [2]=>
+            int(1)
+          }
+        }
+        [12]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(3) {
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-7)
+                [1]=>
+                float(11.5)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(3)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(40)
+                [1]=>
+                int(16)
+              }
+            }
+          }
+          ["name"]=>
+          string(8) "rightArm"
+          ["parent"]=>
+          string(4) "body"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(-5)
+            [1]=>
+            float(21.5)
+            [2]=>
+            int(0)
+          }
+        }
+        [13]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.25)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-7)
+                [1]=>
+                float(11.5)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(3)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(40)
+                [1]=>
+                int(32)
+              }
+            }
+          }
+          ["name"]=>
+          string(11) "rightSleeve"
+          ["parent"]=>
+          string(8) "rightArm"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(-5)
+            [1]=>
+            float(21.5)
+            [2]=>
+            int(0)
+          }
+        }
+        [14]=>
+        array(4) {
+          ["locators"]=>
+          array(1) {
+            ["lead_hold"]=>
+            array(3) {
+              [0]=>
+              int(-6)
+              [1]=>
+              float(14.5)
+              [2]=>
+              int(1)
+            }
+          }
+          ["name"]=>
+          string(9) "rightItem"
+          ["parent"]=>
+          string(8) "rightArm"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(-6)
+            [1]=>
+            float(14.5)
+            [2]=>
+            int(1)
+          }
+        }
+        [15]=>
+        array(4) {
+          ["cubes"]=>
+          array(1) {
+            [0]=>
+            array(4) {
+              ["inflate"]=>
+              float(0.25)
+              ["origin"]=>
+              array(3) {
+                [0]=>
+                int(-4)
+                [1]=>
+                int(12)
+                [2]=>
+                int(-2)
+              }
+              ["size"]=>
+              array(3) {
+                [0]=>
+                int(8)
+                [1]=>
+                int(12)
+                [2]=>
+                int(4)
+              }
+              ["uv"]=>
+              array(2) {
+                [0]=>
+                int(16)
+                [1]=>
+                int(32)
+              }
+            }
+          }
+          ["name"]=>
+          string(6) "jacket"
+          ["parent"]=>
+          string(4) "body"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(0)
+          }
+        }
+        [16]=>
+        array(3) {
+          ["name"]=>
+          string(4) "cape"
+          ["parent"]=>
+          string(4) "body"
+          ["pivot"]=>
+          array(3) {
+            [0]=>
+            int(0)
+            [1]=>
+            int(24)
+            [2]=>
+            int(-3)
+          }
+        }
+      }
+      ["description"]=>
+      array(6) {
+        ["identifier"]=>
+        string(28) "geometry.humanoid.customSlim"
+        ["texture_height"]=>
+        int(64)
+        ["texture_width"]=>
+        int(64)
+        ["visible_bounds_height"]=>
+        int(2)
+        ["visible_bounds_offset"]=>
+        array(3) {
+          [0]=>
+          int(0)
+          [1]=>
+          int(1)
+          [2]=>
+          int(0)
+        }
+        ["visible_bounds_width"]=>
+        int(1)
+      }
+    }
+  }
 }
+1array(4) {
+  ["origin"]=>
+  array(3) {
+    [0]=>
+    int(4)
+    [1]=>
+    int(12)
+    [2]=>
+    int(-2)
+  }
+  ["size"]=>
+  array(3) {
+    [0]=>
+    int(4)
+    [1]=>
+    int(12)
+    [2]=>
+    int(4)
+  }
+  ["uv"]=>
+  array(2) {
+    [0]=>
+    int(32)
+    [1]=>
+    int(48)
+  }
+  ["inflate"]=>
+  int(3)
+}
+1array(4) {
+  ["origin"]=>
+  array(3) {
+    [0]=>
+    int(4)
+    [1]=>
+    float(11.5)
+    [2]=>
+    int(-2)
+  }
+  ["size"]=>
+  array(3) {
+    [0]=>
+    int(3)
+    [1]=>
+    int(12)
+    [2]=>
+    int(4)
+  }
+  ["uv"]=>
+  array(2) {
+    [0]=>
+    int(32)
+    [1]=>
+    int(48)
+  }
+  ["inflate"]=>
+  int(3)
+}
+
+
+
+
+
+
+
+
